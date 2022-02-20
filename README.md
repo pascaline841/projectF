@@ -66,3 +66,10 @@ double test double@test.com
 ```
 python manage.py test
 ```
+## Explications
+Un programme qui fonctionne de façon asychrone, c'est un programme qui évite au maximum de passer du temps à attendre sans rien faire et qui va optimiser ce temps d'attente autant que possible.
+Dans notre cas les recherches vont se faire simultanément sur les 2 bases de données.
+Dans ce programme il y a peu de données donc la réponse est rapide mais il faut imaginer avec 
+de trés grosses bases données ou il sera interessant d'avoir les recherches faites en meme temps 
+plutot qu'une aprés l'autre.
+Asyncio est une bibliothèque permettant de faire de la programmation asynchrone en utilisant la syntaxe async/await.
