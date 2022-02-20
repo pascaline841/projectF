@@ -57,8 +57,11 @@ To access to the admin account : login : admin / password: Finx2022
 http://127.0.0.1:8000/admin 
 
 ## DATABASE
-By default the new entry will be write and stock in the default database. To change it go to setting.py and put the database you want first in DATABASE_ROUTERS = []
-
+By default the new entry will be write and stock in the default database. To change it go to setting.py and put the database you want first in DATABASE_ROUTERS = [] <br>
+Example to test the program : <br>
+john doe john.doe@test.com <br>
+jane doe jane.doe@test.com <br>
+double test double@test.com
 ## Test the program
 ```
 python manage.py test
