@@ -1,0 +1,37 @@
+{% block content %}
+<div>
+    <div>Clients Database</li>
+        <div>
+            <form method="POST">
+                {% csrf_token %}
+                <div>
+                    <input class="form-control col-7" type="text" name="first_name" width="30"
+                        placeholder="first name" required>
+                        <input class="form-control col-7" type="text" name="last_name" width="30"
+                        placeholder="last name" required>
+                        <input class="form-control col-7" type="text" name="email" width="30"
+                        placeholder="email" required>
+                    <input class="btn btn-primary col-4 ml-1" type="submit" value="Search"/>
+                </div>
+            </form>
+            <div>
+                {% if clients %}
+                <p>DATABASE DEFAULT</p>
+                {% for client in clients %}
+                    <p> {{ client }} </p>
+                {% endfor %}
+                {% endif %}
+            </div>
+            <div>
+                {% if clients_db1 %}
+                <p>DATABASE DB_1</p>
+                {% for client in clients_db1 %}
+                    <p> {{ client }}</p>
+                {% endfor %}
+                {% endif %}
+            </div>  
+        </div>
+    </div>
+</div>
+{% endblock %}
+
